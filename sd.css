@@ -247,10 +247,6 @@ justify-content: space-between;
         border-radius: 10px;
     }
 
-    .menu:hover{
-        color: forestgreen;
-    }
-
     .hamburger{
         display: block;
     }
@@ -258,4 +254,23 @@ justify-content: space-between;
     .menu.active{
         display: flex;
     }
+
+    .image{
+        top: 400px;
+        left: 100px;
+    }
+
+    .image img{
+        width: 150px;
+        height: 150px;
+    }
+    .container2{
+        margin-top: -150px;
+        margin-left: 250px;
+    }
+
+    .container2 h1{
+        text-align: center;
+    }
+
 }
