@@ -258,6 +258,7 @@ justify-content: space-between;
     .image{
         top: 400px;
         left: 100px;
+        display: none;
     }
 
     .image img{
