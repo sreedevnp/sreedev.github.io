@@ -1,6 +1,9 @@
 body{
     background: linear-gradient(135deg, #020617, #0f172a, #020617);
     min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.2px;
 }
 
 html, body {
@@ -156,12 +159,53 @@ z-index: 5000;
 .container2{
     
     color: azure;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .container2 h1{
     margin-bottom:15px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(19) forwards , blink 0.7s infinite;
+    border-right: 2px solid white;
 }
+
+@keyframes blink {
+
+    0%{
+        border-color:white;
+    }
+
+    50%{
+        border-color: transparent;
+    }
+
+    100%{
+        border-color: white;
+    }
+    
+}
+
+@keyframes typing {
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:19ch;
+    }
+    
+}
+
+.name{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:15px;
+    font-weight: bold;
+}
+
 
 .container2 h3{
     margin-bottom:20px;
@@ -237,6 +281,7 @@ z-index: 5000;
 .connect h1{
     display: flex;
     justify-content: center;
+    font-size: 32px;
 }
 
 .icons{
@@ -306,6 +351,12 @@ z-index: 5000;
     }
 
     .container2 h1{
+        text-align: center;
+        font-size: 24px;
+        justify-content: center;
+    }
+
+    .name{
         text-align: center;
         display: flex;
         font-size: 24px;
