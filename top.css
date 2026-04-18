@@ -1,0 +1,99 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    letter-spacing: -0.2px;
+    font-family: 'inter',sans-serif ;
+    background: linear-gradient(135deg, #020617, #0f172a, #020617);
+    min-height: 100vh;
+    -webkit-font-smoothing:antialiased;
+}
+
+.hamburger{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.role{
+    display: block;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.nav{
+    display: flex;
+    box-shadow: 0 8px 30px rgba(0, 0, 0 , 0.15);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255,255,255 , 0.04);
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: space-between;
+    position: relative;
+    padding: 5px 60px;
+    align-items: center;
+    z-index:5000;
+}
+
+.menu{
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item{
+    padding: 0 15px;
+}
+
+.menu-item a{
+    text-decoration: none;
+    font-weight: bold;  
+    color: azure; 
+}
+
+.menu-item a:hover{
+    color: powderblue;
+}
+
+.icon1{
+    display: inline-block;
+    margin-right: 10px;
+    animation: icons 2s infinite ease-in-out;
+    color: azure;
+    transform-origin: center;
+    will-change: transform;
+}
+
+@keyframes icons {
+
+    0%{
+        transform: scale(1);
+        text-shadow: 0 0 5px;
+    }
+
+    50%{
+        transform: scale(1.15);
+        text-shadow: 0 0 15px;
+    }
+    
+    100%{
+        transform: scale(1);
+        text-shadow: 0 0 5px;
+    }
+}
+
+.name{
+    font-weight: bold;
+    font-size: 25px;
+    color: azure;
+}
+
+* {
+    box-sizing: border-box;
+}
